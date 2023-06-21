@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body> <!-- ./현재디렉토리 /root directory -->
+    <Form action="./practice_size.html" method="get">
+        <fieldset>
+            <legend>랜덤옷추천</legend>
+            <div>
+                <label for="width"> 가로:</label>   
+                <input type="number" name="width" min="30" max="60" step="1" autocomplete="off">
+            </div>
+            <div>
+                <label for="length"> 세로:</label>   
+                <input type="number" name="length" min="30" max="100" step="5" autocomplete="off">
+            </div>
+            <div>
+                <label for="size">사이즈 : </label>
+                <input type="number" name="size" min="90" max="120" step="5" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="color">색상 : </label>
+                <input type="color" name="color" autocomplete="on" required>
+            </div>
+            <div>
+                <select name="type">
+                    <option value="T_AS_1">상의</option>
+                    <option value="T_AS_2">하의</option>
+                </select>
+            </div>
+            <div>
+                <input type="radio" name="type_1" value="man">
+                <label for="type_1_1">남성</label>
+                <input type="radio" name="type_1" value="woman">
+                <label for="type_1_2">여성</label>
+            </div>
+            <div>
+                <input type="radio" name="type_2" value="short">
+                <label for="type_2_2">짧은옷</label>
+                <input type="radio" name="type_2" value="long">
+                <label for="type_2_3">긴 옷</label>
+            </div>
+            <div>
+                <button type="submit">확인</button>
+            </div>
+        </fieldset>       
+    </Form>
+</body>
+</html>
